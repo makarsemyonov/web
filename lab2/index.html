@@ -14,7 +14,8 @@
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects & Roles</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Private Contact</a></li>
+                <li><a href="#comment">Public Comment</a></li>
             </ul>
         </nav>
     </header>
@@ -47,8 +48,8 @@
             </table>
         </section>
         <section id="feedback">
-            <h2>Contact Form</h2>
-            <form action="#" method="post" enctype="multipart/form-data">
+            <h2>Private Contact Form</h2>
+            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
                 <label for="full-name">Full Name:</label><br>
                 <input type="text" id="full-name" name="full-name" required><br><br>
 
@@ -114,12 +115,33 @@
                 </script>
                 <br><br>
 
-
                 <input type="checkbox" id="agreement" name="agreement" required>
-                <label for "agreement">I agree to the processing of personal data.</label><br><br>
+                <label for="agreement-contact">I agree to the processing of personal data.</label><br><br>
 
                 <input type="submit" value="Submit Form">
             </form>
+        </section>
+        <section id="comment">
+            <h2>Comment section</h2>
+            <h3>Please, register to leave public comments</h3>
+            <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+
+                    <label for="confirm-password">Repeat password:</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement-comment">I agree to the processing of personal data.</label><br><br>
+
+                    <input type="submit" value="Register">
+                </form>
         </section>
         <section id="contact">
             <h2>You can find me here:</h2>
