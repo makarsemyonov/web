@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" href="favicon.gif" type="image/gif" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects & Roles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <img src="me.jpg" alt="My Photo" class="profile-pic">
+            <p>Hi! I'm a cybersecurity student at Mospolytech. Working as low-level developer and application security. I enjoy learning new technologies and improving my skills in programming and security practices.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Role</th>
+                </tr>
+                <tr>
+                    <td>Diamond VPN/FW</td>
+                    <td>The Diamond VPN/FW multifunctional network protection complex (MNPS) is a UTM solution that includes the main functions: protection of data transmission channels, firewalling, detection and reflection of attacks.</td>
+                    <td>Linux kernel developer</td>
+                </tr>
+                <tr>
+                    <td>Diamond ACS</td>
+                    <td>Software, software and hardware complex for protecting information from unauthorized access in computer equipment.</td>
+                    <td>Appsec, DevSecOps</td>
+                </tr>
+            </table>
+        </section>
+        <section id="feedback">
+            <h2>Contact Form</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full-name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label>How did you hear about me?</label><br>
+                <input type="radio" id="friend" name="referral" value="Friend">
+                <label for="friend">Friend</label><br>
+
+                <input type="radio" id="social-media" name="referral" value="Social Media">
+                <label for="social-media">Social Media</label><br>
+
+                <input type="radio" id="search-engine" name="referral" value="Search Engine">
+                <label for="search-engine">Search Engine</label><br><br>
+
+                <label for="appeal-type">Type of Appeal:</label><br>
+                <select id="appeal-type" name="appeal-type">
+                    <option value="">Select...</option>
+                    <option value="request">Work request</option>
+                    <option value="complaint">Complaint</option>
+                    <option value="suggestion">Suggestion</option>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <label for="attachments">Attachments:</label><br>
+                <input type="file" id="attachments" name="attachments"><br><br>
+
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for "agreement">I agree to the processing of personal data.</label><br><br>
+
+                <input type="submit" value="Submit Form">
+            </form>
+        </section>
+        <section id="contact">
+            <h2>You can find me here:</h2>
+            <a href="mailto:makarsemyonov2809@gmail.com" class="contact-link">Email: makarsemyonov2809@example.com</a><br>
+            <a href ="https://t.me/makar_semyonov" class="contact-link">Telegram: @makar_semyonov</a><br>
+            <a href="https://github.com/makarsemyonov" class="contact-link">Github: makarsemyonov</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024  Makar Semyonov. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
