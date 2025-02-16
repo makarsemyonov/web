@@ -1,0 +1,161 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 10px 8% 0 8%;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#active {
+    background-color: white;
+}
+
+#active a {
+    color: #333;
+}
+
+.container {
+    margin: 0% auto;
+    max-width: 75%;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 4px;
+    padding: 5px 0;
+}
+
+.Post:last-child {
+    margin-bottom: 15px;
+}
+
+.Post {
+    margin-top: 10px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Post p {
+    padding: 5px;
+}
+
+.userCard {
+    padding: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+#activePage {
+    background-color: white;
+    color: #333;
+}
+
+#activePage:hover {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.pageButton {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.pagination button {
+    border-radius: 10px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid #333;
+}
+
+.pagination button:hover {
+    background-color:#f9f9f9; 
+    color: #575757; 
+    border-color: #575757; 
+}
+
+.pageButton:last-child {
+    margin-right: 0;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.search-form input {
+    height: 40px;
+    width: 100%;
+    font-size: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #333;
+}
+
+.search-form button {
+    height: 40px;
+    background-color: #333; 
+    color: white;  
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.search-form button:hover {
+    background-color: rgba(100, 100, 100, 0.275);
+}
+
+.lines {
+    top: 35px;
+    margin-right: 85px;
+    width: calc(100% - 85px);
+    position: absolute;
+    box-sizing: border-box;
+    border: 5px solid #333;
+    border-top: none;
+    z-index: 5;
+    background-color: white;
+}
+
+.lines p {
+    font-size: 25px;
+    padding: 5px 5px 5px 5px;
+    margin: 0;
+}
+
+.lines p:hover {
+    background-color: #333;
+    color: white;
+    cursor: default;
+}
+
+#hidden {
+    display: none;
+}
