@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Двухрежимный калькулятор</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="mode-switcher">
+            <button class="mode-btn active" data-mode="standard">Стандарт</button>
+            <button class="mode-btn" data-mode="rpn">ОПН</button>
+        </div>
+
+        <input type="text" id="display" readonly>
+
+        <div class="buttons" id="standard-buttons">
+            <button class="operator" data-op="C">C</button>
+            <button class="operator" data-op="±">±</button>
+            <button class="operator" data-op="%">%</button>
+            <button class="operator" data-op="/">/</button>
+
+            <button data-num="7">7</button>
+            <button data-num="8">8</button>
+            <button data-num="9">9</button>
+            <button class="operator" data-op="*">×</button>
+
+            <button data-num="4">4</button>
+            <button data-num="5">5</button>
+            <button data-num="6">6</button>
+            <button class="operator" data-op="-">-</button>
+
+            <button data-num="1">1</button>
+            <button data-num="2">2</button>
+            <button data-num="3">3</button>
+            <button class="operator" data-op="+">+</button>
+
+            <button data-num="0" style="grid-column: span 2;">0</button>
+            <button data-op=".">.</button>
+            <button class="operator" data-op="=">=</button>
+        </div>
+
+        <div class="buttons" id="rpn-buttons" style="display: none;">
+           <input type="text" id="rpn-input" placeholder="Введите выражение">
+           <button class="operator" id="clear-rpn-input" style="grid-column: span 4;">Стереть</button>
+           <button class="operator" data-op="rpn-calc" style="grid-column: span 4;">Вычислить</button>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

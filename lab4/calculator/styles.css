@@ -1,0 +1,87 @@
+:root {
+    --primary: #4CAF50;
+    --secondary: #2196F3;
+    --background: #f0f0f0;
+    --text: #333;
+}
+
+body.dark {
+    --background: #2d2d2d;
+    --text: #fff;
+}
+
+.calculator {
+    max-width: 400px; 
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--background);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mode-switcher {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.mode-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-btn.active {
+    background: var(--primary);
+    color: white;
+}
+
+#display {
+    width: 100%; 
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-sizing: border-box; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #d0d0d0;
+}
+
+.operator {
+    background: var(--secondary);
+    color: white;
+}
+
+#rpn-input {
+    width: 100%;  
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    grid-column: span 4;
+}

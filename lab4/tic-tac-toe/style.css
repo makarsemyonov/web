@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.winner-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: green;
+}
+
+.scoreboard {
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+}
