@@ -1,0 +1,251 @@
+/* Reset cursor for consistency */
+* {
+    cursor: default;
+}
+
+/* Motto Container */
+.motto-container {
+    width: 34%;
+    border: 2px solid #273657;
+    padding: 0.125rem 0rem;
+    margin: 1.25rem auto;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 45px;
+}
+
+/* Motto Image */
+.motto-image {
+    margin-right: 0.9375rem;
+    width: 4.6875rem;
+    height: 4.6875rem;
+}
+
+/* Motto Text */
+.motto {
+    color: #273657;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    font-weight: bold;
+    letter-spacing: -0.0625rem;
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .motto-container {
+        width: 95%;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        margin: 0.625rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .motto-image {
+        margin-right: 0.25rem;
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    .motto {
+        color: #273657;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1;
+        font-weight: bold;
+        letter-spacing: -4%;
+        white-space: nowrap;
+    }
+}
+
+/* Body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #273657;
+}
+
+/* Navigation styles */
+nav {
+    width: 100%;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+nav ul li {
+    white-space: nowrap;
+    flex: 1;
+}
+
+nav ul li a {
+    font-weight: bold;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.9375rem;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #273657;
+    background-color: white;
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 9.375rem;
+    border-radius: 4.6875rem;
+}
+
+/* Main content styles */
+main {
+    padding: 1.25rem;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 0.625rem;
+    text-align: left;
+}
+
+/* Footer styles */
+footer {
+    background: #273657;
+    color: #fff;
+    text-align: center;
+    padding: 0.625rem 0;
+}
+
+/* Contact link styles */
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+/* Label styles */
+label {
+    font-weight: bold;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: calc(100% - 1.375rem);
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+/* Custom file upload styles */
+.custom-file-upload {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload button {
+    font-weight: 400;
+    letter-spacing: 0.0625rem;
+    width: 10.625rem;
+    background-color: #273657;
+    color: white;
+    border-radius: 0.25rem;
+    border: 2px solid transparent;
+    padding: 0.625rem 0.9375rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.custom-file-upload button:hover {
+    background-color: white;
+    color: #273657;
+    border-color: #273657;
+}
+
+/* Image preview styles */
+#img-preview {
+    margin-top: 1.25rem;
+    width: 9.375rem;
+    height: 9.375rem;
+    display: none;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 7%;
+    border-color: #273657;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+    margin-right: 0.3125rem;
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    width: 10.625rem;
+    background-color: #273657;
+    color: white;
+    border-radius: 0.25rem;
+    border: 2px solid transparent;
+    padding: 0.625rem 0.9375rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 0.0625rem;
+    margin-top: 0.1875rem;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #273657;
+    border-color: #273657;
+}
